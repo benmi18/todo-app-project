@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Task Board Container -->
+    <div class="container">
+
+        <!-- Task Board Header -->
+        <div class="header">
+            <img src="./images/title.png" alt="title">
+        </div>
+
+        <!-- Task Board Form -->
+        <div class="todo-form">
+            <form action="#">
+                <div class="input-area">
+                    <input id="title" class="title form-item" type="text" placeholder="Title" id="todo-title" required>
+                    <textarea name="todo-body-text" id="todo-textarea" cols="30" rows="10" placeholder="My Task" class="form-item" required></textarea>
+                </div>
+                <div class="date-time">
+                    <span>
+                        <label for="date">Target Date</label>
+                        <input type="date" name="date" id="date" class="form-item" required>
+                    </span>
+                    <span>
+                        <label for="time">Target Time</label>
+                        <input type="time" name="time" id="time" class="form-item" required>
+                    </span>
+                </div>
+                <div class="submit">
+                    <button id="button-add" type="submit" class="add-button">Add</button>
+                    <button id="button-clear" class="clear-button">Clear Form</button>
+                </div>
+            </form>
+        </div>
+        <!-- Task Board Added Items -->
+        <div class="todo-items">
+
+        </div>
+    </div>
+
+    <script src="./js/dom.js"></script>
+    <script src="./js/constructors.js"></script>
+    <script src="./js/controler.js"></script>
+    <script src="./js/var-event.js"></script>
+</body>
+
+</html>

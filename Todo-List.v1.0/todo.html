@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Task Board Container -->
+    <div class="container">
+
+        <!-- Task Board Header -->
+        <div class="header">
+            <img src="./images/title.png" alt="title">
+        </div>
+
+        <!-- Task Board Form -->
+        <div class="todo-form">
+            <div class="input-area">
+                <input id="title" class="title form-item" type="text" placeholder="Title" id="todo-title">
+                <textarea name="todo-body-text" id="todo-textarea" cols="30" rows="10" placeholder="my task" class="form-item"></textarea>
+            </div>
+            <div class="date-time">
+                <span>
+                    <label for="date">Target Date</label>
+                    <input type="date" name="date" id="date" class="form-item">
+                </span>
+                <span>
+                    <label for="time">Target Time</label>
+                    <input type="time" name="time" id="time" class="form-item">
+                </span>
+            </div>
+            <div class="submit">
+                <button id="button-add">Add</button>
+            </div>
+        </div>
+        <!-- Task Board Added Items -->
+        <div class="todo-items">
+
+        </div>
+    </div>
+
+    <script src="./js/constructors.js"></script>
+    <script src="./js/dom.js"></script>
+    <script src="./js/controler.js"></script>
+</body>
+
+</html>
