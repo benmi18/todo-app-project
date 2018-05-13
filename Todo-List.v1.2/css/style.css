@@ -39,11 +39,10 @@ textarea {
   background: rgba(255, 255, 255, 0);
   border: none;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .title {
-  height: 50px;
+  height: 40px;
   padding: 5px;
   padding-left: 10px;
   font-size: 24px;
