@@ -51,7 +51,7 @@ textarea {
 
 textarea {
   width: 70%;
-  height: 150px;
+  height: 120px;
   resize: none;
   padding: 10px;
   font-size: 24px;
@@ -60,6 +60,7 @@ textarea {
 .title:focus,
 textarea:focus {
   outline: none;
+  background: rgba(242, 243, 244, 0.5);
 }
 
 .submit {
