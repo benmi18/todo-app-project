@@ -1,0 +1,172 @@
+body {
+  background-image: url("../images/tile.jpg");
+  background-repeat: repeat;
+}
+
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.header {
+  margin: 20px;
+}
+
+.header img {
+  display: block;
+  margin: 0 auto;
+}
+
+.todo-form {
+  width: 60%;
+  background-image: url("../images/formbg.jpg");
+  background-repeat: repeat-y;
+  background-size: contain;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.input-area,
+.date-time {
+  margin-left: 110px;
+  margin-bottom: 5px;
+}
+
+.title,
+textarea {
+  width: 70%;
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.title {
+  height: 50px;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 70%;
+  height: 150px;
+  resize: none;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.title:focus,
+textarea:focus {
+  outline: none;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.submit button {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.date-time {
+  display: flex;
+}
+
+.date-time label {
+  width: 150px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.date-time div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  padding: 10px;
+}
+
+.date-time input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* task item */
+.task {
+  background-image: url("../images/notebg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  margin: 15px;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 30px;
+
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.task:hover .task-close {
+  display: inline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.task .task-head {
+  border-bottom: 1px solid lightgrey;
+  height: 30px;
+  padding: 5px;
+}
+.task .task-close {
+  float: right;
+  display: none;
+}
+
+.task .task-text {
+  height: 130px;
+  overflow: auto;
+  border-bottom: 1px solid lightgrey;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.task .task-date,
+.task .task-time {
+  padding-left: 5px;
+}
+
+/* not valid fom  */
+.not-valid-input {
+  border: 3px solid red;
+}
+.not-valid-input::placeholder {
+  color: red;
+  font-weight: bold;
+}
