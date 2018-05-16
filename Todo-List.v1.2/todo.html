@@ -22,10 +22,12 @@
         <!-- Task Board Form -->
         <div class="todo-form">
             <form action="#">
+                <!-- Title and text area -->
                 <div class="input-area form-group">
                     <input id="title" class="title form-item" type="text" placeholder="Title" id="todo-title" required>
                     <textarea name="todo-body-text" id="todo-textarea" cols="30" rows="10" placeholder="My Task" class="form-item" required></textarea>
                 </div>
+                <!-- Time and date inputs -->
                 <div class="date-time form-group">
                     <div>
                         <label for="date">Target Date</label>
@@ -36,6 +38,7 @@
                         <input type="time" name="time" id="time" class="form-item form-control" required>
                     </div>
                 </div>
+                <!-- Add and clear form buttons -->
                 <div class="submit form-group">
                     <button id="button-add" type="submit" class="add-button btn btn-success">Add</button>
                     <button id="button-clear" class="clear-button btn btn-warning">Clear Form</button>
@@ -43,9 +46,7 @@
             </form>
         </div>
         <!-- New tasks will be added with js -->
-        <div class="todo-items">
-
-        </div>
+        <div class="todo-items"></div>
     </div>
 
     <script src="./js/dom.js"></script>
